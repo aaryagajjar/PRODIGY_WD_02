@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #79f6fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #008ecc;
+    padding: 20px;
+    border-radius: 35px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    padding-top: 25px;
+    margin-top: 0;
+    padding-bottom: 30px;
+    
+    font-size: 70px;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 600px;
+    height: 200px;
+    border-radius: 500px;
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     */
+     background: #1f2833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#time-display {
+    font-size: 90px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 40px;
+    font-size: 1.35rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
+
+#pause-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+#pause-btn:hover {
+    background-color: #e68900;
+}
+
+#reset-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+#reset-btn:hover {
+    background-color: #d32f2f;
+}
+
+#lap-btn {
+    background-color: #ff00c8;
+    color: white;
+}
+
+#lap-btn:hover {
+    background-color: #a22498;
+}
+
+.laps {
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#lap-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lap-list li {
+    background-color: #f9f9f9;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border-left: 4px solid #667eea;
+}
+
+@media (max-width: 480px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    #time-display {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+h2{
+    padding-left: 4%;
+    font-size: 31px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
